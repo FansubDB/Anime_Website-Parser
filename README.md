@@ -9,10 +9,14 @@ Based on [SimpleHTMLDom](https://sourceforge.net/projects/simplehtmldom/). Thank
 ## How to use it?
 
  - Visit an page on [https://fansubdb.com](https://fansubdb.com) or [https://www.livechart.me](https://www.livechart.me).
- - For FANSUBDB: 
+ - For FansubDB.com: 
    - Choose a wiki page and show the source code of the page.
    - Copy the table content from the line `<table class="wikitable" style="width:100%">` to `</td></tr></table>` included.
    - Paste that on the file `fansubdb.html` present on this repo.
    - Run `fansubdb_parser.php`
+ - For LiveChart.me:
+   - Choose a page.
+   - Copy the source of the page on the file `livechart.html` present on this repo.
+   - Run `livechart_parser.php`
 
 Visit the php page on your php server (the php server can be localhost or not!).
