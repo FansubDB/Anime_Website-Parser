@@ -6,6 +6,8 @@ Parse some Anime website for my use:
 
 Based on [SimpleHTMLDom](https://sourceforge.net/projects/simplehtmldom/). Thanks for this project.
 
+Use the changes from [Sunra repo](https://github.com/sunra/php-simple-html-dom-parser/blob/master/Src/Sunra/PhpSimple/simplehtmldom_1_5/simple_html_dom.php).
+
 ## How to use it?
 
  - Visit an page on [https://fansubdb.com](https://fansubdb.com) or [https://www.livechart.me](https://www.livechart.me).
