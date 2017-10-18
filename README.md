@@ -16,6 +16,11 @@ Use the changes from [Sunra repo](https://github.com/sunra/php-simple-html-dom-p
    - Copy the table content from the line `<table class="wikitable" style="width:100%">` to `</td></tr></table>` included.
    - Paste that on the file `fansubdb.html` present on this repo.
    - Run `fansubdb_parser.php`
+   - To fix the JSON content:
+      - Replace `},]` by `}]`
+      - Replace ` "` by `"`
+      - Replace `" ` by `"`
+      - Replace (LF)->` S`  by ` S`
  - For LiveChart.me:
    - Choose a page, add `?sortby=title&leftovers=no` to the end of the URL.
    - Copy the source of the page on the file `livechart.html` present on this repo.
