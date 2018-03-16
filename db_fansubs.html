@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+ 	<head>
+		<title>db_fansubs.html</title>
+	</head>
+
+	<body>
+
+		<div id="json"></div>
+
+		<script type="text/javascript" src="https://cdn.rawgit.com/jeremyfa/yaml.js/d3e1d7b11a9f9eea928fd1b9e4d605e4d69fd610/dist/yaml.min.js"></script>
+		<script>
+			var nativeObject = YAML.load("NAME_OF_THE_FILE.yml");
+
+			var animes = new Array ();
+
+			for (let animeNativeObject of nativeObject) {
+				var anime = {
+					name: animeNativeObject.name_ja,
+					group: new Array ()
+				};
+
+								//transform into array the animeNativeObjectgroups		
+				if (typeof animeNativeObject.groups !== "undefined") {
+					for(let groupNative of Object.entries(animeNativeObject.groups)) {
+						var status = "";
+						console.log(groupNative);
+						if(groupNative[1] === "stream") {
+							status = "simulcast";
+						}
+						else {
+							status = "release";
+						}
+						var detail = new Object();
+						detail.name= groupNative[0];
+
+						var group = {
+							status: status,
+							detail: detail
+						};
+
+						anime.group.push(group)
+					}
+				}
+
+				animes.push(anime);		
+			}
+			document.getElementById("json").innerHTML = JSON.stringify(animes, null, "\t");
+		</script>
+	</body>
+</html>
