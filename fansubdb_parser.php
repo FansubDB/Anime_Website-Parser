@@ -13,7 +13,7 @@ foreach ($dom->find('tr') as $row) {
 		echo '{
       "name": "' . $title . '",
       "image": "",
-      "group": [';
+      "groups": [';
 	  foreach ($a_groups as $g){
 		  echo '{
 			  "status": "release",
