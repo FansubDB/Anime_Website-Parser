@@ -8,7 +8,7 @@ foreach ($dom->find('h3') as $h) {
 	echo '{';
 	echo '"name": "' . $h->innertext . '",';
 	echo '"image": "",';
-	echo '"group": []';
+	echo '"groups": []';
 	echo '},';
 	echo '<br>';
 }
