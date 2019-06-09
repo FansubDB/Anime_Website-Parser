@@ -7,8 +7,6 @@ Parse some Anime websites for my use:
 
 Based on [SimpleHTMLDom](https://sourceforge.net/projects/simplehtmldom/). Thanks for this project.
 
-Use the changes from [Sunra repo](https://github.com/sunra/php-simple-html-dom-parser/blob/master/Src/Sunra/PhpSimple/simplehtmldom_1_5/simple_html_dom.php).
-
 ## How to use it?
 
  - Visit a page on:
