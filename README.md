@@ -28,7 +28,7 @@ Based on [SimpleHTMLDom](https://sourceforge.net/projects/simplehtmldom/). Thank
  
  ### For LiveChart.me
  
-  - Choose a page, add `?sortby=title&leftovers=no` to the end of the URL.
+  - Choose a page, add `?sortby=title&ongoing=none` to the end of the URL.
   - Copy the source of the page on the file `livechart.html` present on this repo.
   - Visit `livechart_parser.php` on your php server
   
